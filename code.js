@@ -44,9 +44,14 @@ function sayHello(input){
     return "Hello, World!";
 }
 
-
-
-
+//Exercise #10
+function isFive(x){
+    if (x === 5) {
+        return true;
+        }
+    else
+        return false;
+}
 
 
 

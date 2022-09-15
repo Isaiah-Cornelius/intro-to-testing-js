@@ -62,8 +62,32 @@ describe('sayHello', function(){
         expect(sayHello(false)).toBe("Hello, World!");
     })
 
-    it('returns "Hello, World!" when called with a number string argument', function (){
+    it('should return "Hello, World!" when called with a number string argument', function (){
         expect(sayHello("5")).toBe("Hello, World!");
         expect(sayHello("-1")).toBe("Hello, World!");
     })
 })
+
+//Exercise #10
+// 🔳Ensure that isFive returns a boolean no matter what the input
+// 🔳Ensure that isFive returns true when passed 5
+// 🔳What about if we pass in the string "5"? Do you want isFive to return true for that?
+// 🔳If so, write the test, ensure that the test is failing, and then write the implementation
+describe('isFive', function (){
+    it('should be a defined function', function(){
+        expect(typeof isFive).toBe('function');
+    })
+    it('should always return a boolean value', function (){
+        expect(isFive(4)).toBe(false);
+        expect(isFive("5")).toBe(false);
+    })
+})
+
+
+
+
+
+
+
+
+
