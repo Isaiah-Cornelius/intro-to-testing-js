@@ -5,10 +5,10 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-//Exercise #1
+//Exercise #1 - 2
 //sayHello function
 function sayHello(){
-
+    return "";
 }
 
 
