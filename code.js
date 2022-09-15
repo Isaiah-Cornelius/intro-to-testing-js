@@ -5,11 +5,13 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-//Exercise #1 - 3
+//Exercise #1 - 5
 //sayHello function
 function sayHello(input){
     if (input === 'Alex'){
-        return 'Hello, Alex!';
+        return 'Hello, Alex!'
+    } else if (input === 'Pat'){
+        return 'Hello, Pat!'
     }
     return "Hello, Jane!";
 }
