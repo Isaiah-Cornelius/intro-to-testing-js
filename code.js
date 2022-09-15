@@ -17,13 +17,32 @@ function helloWorld() {
 // }
 
 //Exercise #6 Refactor sayHello()
+// function sayHello(input){
+//     return "Hello, " + input + "!";
+// }
+
+//Exercise #8 Repeat step
+// function sayHello(input){
+//     if(typeof input === 'undefined'){
+//         return "Hello, World!";
+//     } else if (input === true){
+//         return "Hello, World!";
+//     } else if (input === false){
+//         return "Hello, World!";
+//     }
+//     return "Hello, " + input + "!";
+// }
+
+//Exercise #8 Refactor
 function sayHello(input){
-    return "Hello, " + input + "!";
+    if (input !== "" && typeof input === 'string'){
+        if(Number(input) >= 0 || Number(input) <= 0){
+            return "Hello, World!";
+        }
+        return "Hello, " + input + "!";
+    }
+    return "Hello, World!";
 }
-
-
-
-
 
 
 

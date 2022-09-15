@@ -19,38 +19,51 @@ describe('sayHello', function(){
     it('should be a defined function', function(){
         expect(typeof sayHello).toBe('function');
     })
-})
+
 
 //Exercise #2
-describe('sayHello', function (){
+
     it('should return a string when called', function (){
         expect(typeof sayHello()).toBe('string');
     })
-})
 
 //Exercise #3
-describe('sayHello', function (){
+
     it('should return "Hello, Jane!" when called with sayHello("Jane");', function (){
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     })
-})
+
 
 //Exercise #4
-describe('sayHello', function (){
+
     it('should return "Hello, Alex!" when called with sayHello("Alex");', function (){
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     })
-})
+
 
 //Exercise #5
-describe('sayHello', function(){
+
     it('should return "Hello, Pat!" when called with sayHello("Pat");', function (){
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     })
+
+
+//Exercise #8
+
+    it('should return "Hello, World" when called without an argument sayHello();', function(){
+        expect(sayHello()).toBe("Hello, World!");
+    })
+
+    it('should return "Hello, World!" when called with sayHello(true)', function (){
+        expect(sayHello(true)).toBe("Hello, World!");
+    })
+
+    it('should return "Hello, World!" when called with sayHello(false)', function(){
+        expect(sayHello(false)).toBe("Hello, World!");
+    })
+
+    it('returns "Hello, World!" when called with a number string argument', function (){
+        expect(sayHello("5")).toBe("Hello, World!");
+        expect(sayHello("-1")).toBe("Hello, World!");
+    })
 })
-
-
-
-
-
-
