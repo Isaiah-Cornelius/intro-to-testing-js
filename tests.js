@@ -28,7 +28,13 @@ describe('sayHello', function (){
     })
 })
 
+//Exercise #3
+describe('sayHello', function (){
+    it('should return "Hello, Jane!" when called with sayHello("Jane");', function (){
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    })
 
+})
 
 
 
