@@ -69,10 +69,10 @@ describe('sayHello', function(){
 })
 
 //Exercise #10
-// 🔳Ensure that isFive returns a boolean no matter what the input
-// 🔳Ensure that isFive returns true when passed 5
-// 🔳What about if we pass in the string "5"? Do you want isFive to return true for that?
-// 🔳If so, write the test, ensure that the test is failing, and then write the implementation
+// Ensure that isFive returns a boolean no matter what the input
+// Ensure that isFive returns true when passed 5
+// What about if we pass in the string "5"? Do you want isFive to return true for that?
+// If so, write the test, ensure that the test is failing, and then write the implementation
 describe('isFive', function (){
     it('should be a defined function', function(){
         expect(typeof isFive).toBe('function');
@@ -83,7 +83,33 @@ describe('isFive', function (){
     })
 })
 
+//Exercise #11 isEven function
+//     returns a boolean no matter the input
+//     returns true when executed with isEven(2)
+//     returns true when executed with isEven(-4)
+//     returns false when executed with isEven(3)
+//     returns false when called with isEven("banana")
+//     returns true when called with isEven("8")
+//     returns false when called with isEven(Infinity)
+//     return false when called with a boolean input like isEven(true) or isEven(false)
+//     returns false when called without an argument like isEven()
+describe('isEven', function (){
+    it('should be a defined fundtion', function (){
+        expect(typeof isEven).toBe('function');
+    })
+    it('should always return a boolean value when called', function (){
+        expect(isEven(2)).toBe(true);
+        expect(isEven(-4)).toBe(true);
+        expect(isEven(3)).toBe(false);
+        expect(isEven('banana')).toBe(false);
+        expect(isEven("8")).toBe(true);
+        expect(isEven(Infinity)).toBe(false);
+        expect(isEven(true)).toBe(false);
+        expect(isEven(false)).toBe(false);
+        expect(isEven()).toBe(false);
 
+    })
+})
 
 
 

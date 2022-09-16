@@ -36,7 +36,7 @@ function helloWorld() {
 //Exercise #8 Refactor
 function sayHello(input){
     if (input !== "" && typeof input === 'string'){
-        if(Number(input) >= 0 || Number(input) <= 0){
+        if(Number(input) <= Infinity){
             return "Hello, World!";
         }
         return "Hello, " + input + "!";
@@ -53,6 +53,14 @@ function isFive(x){
         return false;
 }
 
+//Exercise #11
 
-
+function isEven(x){
+    if(typeof x === 'boolean'){
+        return false;
+    } else if (x % 2 === 0){
+        return true;
+    }
+    return false;
+}
 
