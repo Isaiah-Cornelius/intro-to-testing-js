@@ -97,7 +97,7 @@ describe('isEven', function (){
     it('should be a defined fundtion', function (){
         expect(typeof isEven).toBe('function');
     })
-    it('should always return a boolean value when called', function (){
+    it('should always return a boolean value', function (){
         expect(isEven(2)).toBe(true);
         expect(isEven(-4)).toBe(true);
         expect(isEven(3)).toBe(false);
@@ -111,7 +111,45 @@ describe('isEven', function (){
     })
 })
 
-
+//Exercise #12 isVowel function
+// isVowel should be a defined function
+// isVowel always returns a boolean
+// isVowel("a") returns true
+// isVowel("A") returns true
+// isVowel("y") returns false
+// isVowel(4) returns false
+// isVowel(true) or isVowel(false) both return false
+// isVowel("banana") returns false
+// isVowel() returns false
+describe('isVowel', function (){
+    it('should be a defined function', function (){
+        expect(typeof isVowel).toBe('function');
+    })
+    it('isVowel("a") returns true', function (){
+        expect(isVowel("a")).toBe(true);
+    })
+    it('isVowel("A") returns true', function (){
+        expect(isVowel("A")).toBe(true);
+    })
+    it('isVowel("y") returns false', function (){
+        expect(isVowel("y")).toBe(false);
+    })
+    it('isVowel(4) returns false', function (){
+        expect(isVowel(4)).toBe(false);
+    })
+    it('isVowel(true) returns false', function (){
+        expect(isVowel(true)).toBe(false);
+    })
+    it('isVowel(false) returns false', function (){
+        expect(isVowel(false)).toBe(false);
+    })
+    it('isVowel(\'banana\') returns false', function (){
+        expect(isVowel(false)).toBe(false);
+    })
+    it('isVowel() returns false', function (){
+        expect(isVowel()).toBe(false);
+    })
+})
 
 
 

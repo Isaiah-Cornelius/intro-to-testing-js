@@ -64,3 +64,25 @@ function isEven(x){
     return false;
 }
 
+//Exercise #12 isVowel function
+function isVowel(x){
+    let vowelArray = ["a", "A", "e", "E", "i", "I", "o", "O"];
+    if(vowelArray.includes(x)){
+        return true;
+    }
+    return false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
